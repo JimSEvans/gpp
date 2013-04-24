@@ -1,0 +1,39 @@
+compile
+run-main
+run
+run Classify
+run-main Classify
+compile
+run Classify
+exit
+compile
+exit
+compile
+build update
+exit
+update
+package
+compile
+build update
+exit
+compile
+exit
+update
+compile
+~compile
+compile
+~compile
+compile
+~compile
+compile
+exit
+compile
+update
+update compile
+exit
+compile
+~compile
+compile
+~compile
+compile
+~compile

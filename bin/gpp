@@ -12,6 +12,8 @@ then
     JAVA_MEM_FLAG=-Xmx4g
 fi
 
+
+
 MANAGED_JARS="`find $GPP_DIR/lib_managed -name '*.jar' -print | tr '\n' ':'`"
 UNMANAGED_JARS="`find $GPP_DIR/lib -name '*.jar' -print | tr '\n' ':'`"
 
@@ -39,7 +41,9 @@ EOF
 CLASS=
 
 case $CMD in
-    run) CLASS=$1; shift;;
+	convert-emoticon) CLASS=gpp.exp.EmoticonConverter;;
+	convert-stanford) CLASS=gpp.exp.StanfordConverter;;
+	exp) CLASS=gpp.exp.TweetClassify;;
     help) help; exit 1;;
     *) echo "Unrecognized command: $CMD"; help; exit 1;;
 esac
